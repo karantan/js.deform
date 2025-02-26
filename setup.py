@@ -63,7 +63,6 @@ setup(
         'js.jqueryui',
         'js.modernizr',
         'js.select2',
-        'js.tinymce',
         'setuptools',
     ],
     extras_require={

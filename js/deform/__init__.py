@@ -15,7 +15,6 @@ from js.jqueryui import ui_datepicker
 from js.jqueryui import ui_sortable
 from js.modernizr import modernizr
 from js.select2 import select2
-from js.tinymce import tinymce
 from pkg_resources import resource_filename
 
 
@@ -105,7 +104,6 @@ resource_mapping = {
     'pickadate': [pickadate, ],
     'select2': [select2, ],
     'sortable': [jquery_sortable, ],
-    'tinymce': [tinymce, ],
     'typeahead': [typeahead, ],
 }
 
@@ -114,7 +112,7 @@ def auto_need(form):
     """Automatically ``need()`` the relevant Fanstatic resources for a form.
 
     This function automatically utilises libraries in the ``js.*`` namespace
-    (such as ``js.jquery``, ``js.tinymce`` and so forth) to allow Fanstatic
+    (such as ``js.jquery`` and so forth) to allow Fanstatic
     to better manage these resources (caching, minifications) and avoid
     duplication across the rest of your application.
     """

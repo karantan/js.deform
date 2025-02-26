@@ -50,11 +50,6 @@ function provided in this package.
 By doing the above, any widget requirements - including those of `Deform`
 itself - will be included for Fanstatic.
 
-So, you may have a form that requires a ``deform.widget.RichTextWidget``
-for one of its fields.  This type of widget requires resources relating to
-`TinyMCE`.  ``js.deform.auto_need`` will use ``js.tinymce`` for this
-requirement.
-
 This is all best illustrated in the following example.
 
 Initialise Fanstatic so we can see resources being included:
@@ -75,7 +70,7 @@ Create a demonstration schema and form:
 Check the form's resource requirements:
 
   >>> form.get_widget_requirements()
-  [('deform', None), ('tinymce', None)]
+  [('deform', None)]
 
 Ask ``auto_need`` to include the resources for us:
 
@@ -86,9 +81,6 @@ So we can now see the resources that have been included:
 
   >>> from js.jquery import jquery
   >>> jquery in needed.resources()
-  True
-  >>> from js.tinymce import tinymce
-  >>> tinymce in needed.resources()
   True
   >>> from js.deform import deform_js
   >>> deform_js in needed.resources()
@@ -137,8 +129,6 @@ the ``need()`` calls are not issued before rendering the form.
 Again all resources have been included for us:
 
   >>> jquery in needed.resources()
-  True
-  >>> tinymce in needed.resources()
   True
   >>> deform_js in needed.resources()
   True

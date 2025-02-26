@@ -32,5 +32,4 @@ that are part of the ``deform`` distribution are available separately:
   - jquery.maskedinput (http://pypi.python.org/pypi/js.jquery_maskedinput)
   - jquery-maskmoney (http://pypi.python.org/pypi/js.jquery_maskmoney)
   - jQuery Sortable (http://pypi.python.org/pypi/js.jquery-sortable)
-  - TinyMCE (http://pypi.python.org/pypi/js.tinymce)
   - Typeahead (http://pypi.python.org/pypi/js.typeahead)
