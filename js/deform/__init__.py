@@ -9,10 +9,10 @@ from js.jquery_form import jquery_form
 from js.jquery_maskedinput import jquery_maskedinput
 from js.jquery_maskmoney import jquery_maskmoney
 from js.jquery_sortable import jquery_sortable
-from js.jquery_timepicker_addon import timepicker
-from js.jqueryui import ui_autocomplete
-from js.jqueryui import ui_datepicker
-from js.jqueryui import ui_sortable
+# from js.jquery_timepicker_addon import timepicker
+# from js.jqueryui import ui_autocomplete
+# from js.jqueryui import ui_datepicker
+# from js.jqueryui import ui_sortable
 from js.modernizr import modernizr
 from js.select2 import select2
 from pkg_resources import resource_filename
@@ -92,14 +92,14 @@ pickadate_css = Group([
 pickadate = Group([pickadate_js, pickadate_css, ])
 
 resource_mapping = {
-    'datetimepicker': [timepicker, ],
+    # 'datetimepicker': [timepicker, ],
     'deform': [deform_js, ],
     'fileupload': [fileupload, ],
     'jquery': [jquery, ],
     'jquery.form': [jquery_form, ],
     'jquery.maskMoney': [jquery_maskmoney, ],
     'jquery.maskedinput': [jquery_maskedinput, ],
-    'jqueryui': [ui_autocomplete, ui_datepicker, ui_sortable, ],
+    # 'jqueryui': [ui_autocomplete, ui_datepicker, ui_sortable, ],
     'modernizr': [modernizr, ],
     'pickadate': [pickadate, ],
     'select2': [select2, ],
